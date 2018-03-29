@@ -1,9 +1,12 @@
-# Chapter 2 : Probability Distributions
+# Chapter 2　Probability Distributions
+
 - **density estimation**: To model the probability distribution p(x) of a random variable x, given a finite set x1, ..., xn of observations.
 - **parametric distributions**: Binomial and multinomial distributions for discrete random variables and the Gaussian distribution for continuous random variables.
 - **nonparametric density estimation**: These models contain parameters, which controls the model complexity rather than the form of the distribution. Such as histograms, nearest-neighbours, and kernels.
 
-# Chapter 3 : Linear Models for Regression
+
+# Chapter 3　Linear Models for Regression
+
 - **basis function**: The simplest form of linear regression models are also linear functions of the input variables. However, we can obtain a much more useful class of funtions by taking linear combinations of a fixed set of nonlinear functions of input variables, known as *basis functions*.
 - **linear models**: Linear models have significant limitations as practical techniques for pattern recognition, particularly for problems involving input spaces of high dimensionality, but they have nice analytical properties and form the foundation for more sophisticated models to be dicussed in later chapters.
 - **some basis functions**: Polynomials, spline functions, the sigmoidal basis function, the logistic sigmoid function, the 'tanh' function, the Fourier basis function, wavelets.
@@ -20,3 +23,9 @@
 - **the maximization of the log evidence**: There are two approaches: 1) Evaluate the evidence function analytically and then set its derivative equal to zero to obtain re-estimation equations for α and β. 2) Expectation maximization.
 - **limitations of fixed basis functions**: The difficulty stems from the assumption that the basis functions are fixed before the training data set is observed and is a manifestation of the curse of dimensionality. As a consequence, the number of basis functions needs to grow rapidly, often exponentially, with the dimensionalty *D* of the input space.
 - **alleviation of the last problem**: There are two properties of real data sets. First of all, the data vectors typically lie close to a nonlinear manifold whose intrinsic dimensionality is smaller than that of the input space as a result of strong correlations between the input variables. The second property is that target variables may have significant dependence on only a small number of possible directions within the data manifold. Neural networks can exploit this property by choosing the directions in input space to which the basis functions respond.
+
+
+# Chapter 4　Linear Models for Classification
+
+- **linearly separable**: Data sets whose classes can be separated exactly by linear decision surfaces.
+- **three approaches to the classification problem**: The simplest involves constructing a *discriminant function* that directly assigns each vector **x** to a specific class. A more powerful approach, however, models the conditional probability distribution *p*(***C****k* ｜**x**) in an inference stage, and then subsequently uses this distribution to make optimal decisions. There are two different approaches to determining the conditional probabilities. One technique is to model them directly, for example by representing them as parametric models and then optimizing the parameters using a training set. Alternatively, we can adopt a generative approach in which we model the class-conditional densities given by  *p*(**x**｜***C****k* ), together with the prior probabilities p(***C****k*) for the classes, and we compute the required posterior probabilities using Bayes' theorem.
