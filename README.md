@@ -6,7 +6,7 @@ Notes for Pattern Recognition and Machine Learning. (NUAA)
 |:---|:---:|
 |1　*Introduction*|2018-03-28|
 |2　*Probability Distributions*|2018-03-28|
-|3　*Linear Models for Regression*||
+|3　*Linear Models for Regression*|2018-03-30|
 |4　*Linear MOdels for Classification*||
 |5　*Neural Networks*||
 |6　*Kernel Methods*||
