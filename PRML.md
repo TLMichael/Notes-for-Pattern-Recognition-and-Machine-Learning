@@ -35,3 +35,9 @@
 - **the perceptron algorithm**: Applying the stochastic gradient descent algorithm to the *perceptron criterion*, the *perceptron convergence theorem* states that if there exists an exact solution (in other words, if the training data set is linearly separable), then the perceptron learning algorithm is guaranteed to find an exact solution in a finite number of steps.
 - **two important activation functions**: *logistic sigmoid function*, *softmax function*.
 - **iterative reweighted least squares**: Use the functional form of the generalized linear model explicitly and determine its parameters directly by using maximum likelihood.
+- **Laplace approximation**: The Laplace approximation aims to find a Guassian approximation to a probability density defined over a set of continuous variables.
+
+
+# Chapter 4　Neural Networks
+
+- **the feed-forward neural network**: Also known as the *multilayer perceptron*, which aims to fix the number of basis functions in advance but allow them to be adaptive, in other words to use parametric forms for the basis functions in which the parameter values are adapted during training.
