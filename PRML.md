@@ -38,6 +38,8 @@
 - **Laplace approximation**: The Laplace approximation aims to find a Guassian approximation to a probability density defined over a set of continuous variables.
 
 
-# Chapter 4　Neural Networks
+# Chapter 5　Neural Networks
 
 - **the feed-forward neural network**: Also known as the *multilayer perceptron*, which aims to fix the number of basis functions in advance but allow them to be adaptive, in other words to use parametric forms for the basis functions in which the parameter values are adapted during training.
+- **the approximation properties of feed-forward networks**: Neural networks are universal approximators. A two-layer network with linear outputs can uniformly approximate any continuous function on a compact input domain to arbitrary accuracy provided the network has a sufficiently large number of hidden units.
+- 
