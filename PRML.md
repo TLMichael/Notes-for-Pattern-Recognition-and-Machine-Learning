@@ -40,15 +40,41 @@
 
 # Chapter 5　Neural Networks
 
+### The functional form of the network model. 
+### The problem of determining the network parameters within a maximun likelihood framework using the technique of *error backpropagation*.
+### How the backpropagation framework can be extensions to allow other derivatives to be evaluated, such as the Jacobian and Hessian matrices.
+### Various approaches to regularization of neural network training.
+### A general framework for modelling conditional probability distributions known as *mixture density networks*.
+### The use of Bayesian treatments of neural networks.
+
 - **the feed-forward neural network**: Also known as the *multilayer perceptron*, which aims to fix the number of basis functions in advance but allow them to be adaptive, in other words to use parametric forms for the basis functions in which the parameter values are adapted during training.
 - **the approximation properties of feed-forward networks**: Neural networks are universal approximators. A two-layer network with linear outputs can uniformly approximate any continuous function on a compact input domain to arbitrary accuracy provided the network has a sufficiently large number of hidden units.
 - **nonconvex**: In practice, the nonlinearity of the network function causes the error function to be nonconvex.
 - **a natural choice of output unit activation function and error function**: For regression we use linear outputs and a sum-of-squares error, for binary classifications we use logistic sigmoid outputs and a cross-entropy error function, and for multiclass classification we use softmax outputs with the corresponding multiclass cross-entropy error function.
+- **parameter optimization**: Our goal is to find a vector w such that E(w) takes its smallest value. However, the error function is nonconvex, so there will be many points in weight space at which the gradient vanishes (of is numerically very small). What's worse is that for any point w that is a local minimum, there will be other points in weight space that are equivalent minima (in a two-layer network with M hidden units, each point in weight space is a member of a family of M!2^M equivalent points). So in general it will not be known whether the global minimum has been found. Because there is clearly no hope of finding an analytical solution to the equation ▽E(w) = 0 we resort to iterative numerical procedures.
 - **gradient descent**: At each step the weight vector is moved in the direction of the greastest rate of decrease of the error function, and so this approach is known as *gradient descent* or *steepest descent*.
 - **stochastic gradient descent**: On-line gradient descent, also known as *sequential gradient descent* or *stochastic gradient descent*, makes an update to the weight vector based on one data point at a time.
 - **error backpropagation**: An efficient technique for evaluating the gradient of an error function for a feed-forward neural network, that can be achieved using a local message passing scheme in which information is sent alternately forwards and backwards through the network and is known as *error backpropagation*, or sometimes simply as *backprop*.
 - **a simple example**: Consider a two-layer network of the form illustrated in Figure 5.1, together with a sum-of-squares error, in which the output units have linear activation functions, while the hidden units have logistic sigmoid activation functions given by *h(a) = tanh(a)*.
 - **Jacobian matrix**: It's elements are given by the derivatives of the network outputs with respect to the inputs.
-- **invariances**: Alternative approaches for encouraging an adaptive model to exhibit the required invariances. These can broadly be divided into four categories: 1.The training set is augmented using replicas of the training patterns, transformed according to the desired invariances. 2. A regularization term is added to the error function that penalizes changes in the model output when the input is transformed, known as tangent propagation. 3. INvariance is built into the pre-processing by extracting features that are invariant under the required transformations. 4. The final option is to build the invariance properties into the structure of a neural network.
-- **convolutional neural network**: Three mechanisms: (i)local receptive fields, (ii)weight sharing, and (iii)subsampling.
+- **The Hessian Matrix**: The Hessian plays an important role in many aspects of neural computing, uncluding the following:
+    1. Several nonlinear optimization algorithms used for training neural networks are based on considerations of the second-order properties of the error surface, which are controlled by the Hessian matrix.
+    2. The Hessian forms the basis of a fast procedure for re-training a feed-forward network following a small change in the training data.
+    3. The inverse of the Hessian has been used to identify the least significant weights in a network as part of network 'pruning' algorithms.
+    4. The Hessian plays a central role in the Laplace approximation for a Bayesian neural network. Its inverse is used to determine the values of hyperparameters, and its determinant is used to evaluate the model evidense.
+- **invariances**: Alternative approaches for encouraging an adaptive model to exhibit the required invariances. These can broadly be divided into four categories: 
+    1. The training set is augmented using replicas of the training patterns, transformed according to the desired invariances. 
+    2. A regularization term is added to the error function that penalizes changes in the model output when the input is transformed, known as tangent propagation. 
+    3. Invariance is built into the pre-processing by extracting features that are invariant under the required transformations. 
+    4. The final option is to build the invariance properties into the structure of a neural network.
+- **convolutional neural network**: Three mechanisms: 
+    1. local receptive fields, 
+    2. weight sharing, 
+    3. subsampling.
 - **feature map**: In the convolutional layer the units are organized into planes.
+- **Bayesian neural network**: It's very hard to understand.
+
+
+# Chapter 6　Kernel Methods
+
+### 
