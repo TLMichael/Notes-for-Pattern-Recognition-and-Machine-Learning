@@ -9,7 +9,7 @@ Notes for Pattern Recognition and Machine Learning. (NUAA)
 |3　*Linear Models for Regression*|2018-03-30|
 |4　*Linear Models for Classification*|2018-03-31|
 |5　*Neural Networks*|2018-05-02|
-|6　*Kernel Methods*||
+|6　*Kernel Methods*|2018-05-13|
 |7　*Sparse Kernel Machines*||
 |8　*Graphical Models*||
 |9　*Mixture Models and EM*||

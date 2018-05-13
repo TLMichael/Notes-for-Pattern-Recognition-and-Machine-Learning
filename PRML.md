@@ -77,4 +77,7 @@
 
 # Chapter 6　Kernel Methods
 
-### 
+- **Dual Representations**: Many linear models for regression and classification can be reformulated in terms of a dual representation in which the kernel function arises naturally. The advantage of the dual formulation is that it is expressed entirely in terms of kernel function *k*(x, x'). We can therefore work directly in terms of kernels and avoid the explicit introduction of the feature vector *ϕ*(x), which allows us implicitly to use feature spaces of high, even infinite, dimentionality.
+- **Constructing Kernels**: One approach is to choose a  feature space mapping *ϕ*(x) and then use this to find the corresponding kernel. Another is to construct kernel functions directly. One powerful technique for constructing new kernels is to build them out of simpler kernels as building blocks. e.g. Polynomial kernel, Gaussian kernel, define a kernel by a generative model, Fisher kernel, sigmoidal kernel.
+- **Gaussian process**: Here we extend the role of kernels to probabilistic discriminative models, leading to the framework of Gaussian processes. We shall thereby see how kernels arise naturally  in a Bayesian setting.
+- **Gaussian process**: In general, a Gaussian process is defined as a probability distribution over functions y(x) such that the set of values of y(x) evaluated at an arbitrary set of points x1, ..., xN jointly have a Gaussian distribution.
