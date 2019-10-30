@@ -40,12 +40,12 @@
 
 # Chapter 5　Neural Networks
 
-### The functional form of the network model. 
-### The problem of determining the network parameters within a maximun likelihood framework using the technique of *error backpropagation*.
-### How the backpropagation framework can be extensions to allow other derivatives to be evaluated, such as the Jacobian and Hessian matrices.
-### Various approaches to regularization of neural network training.
-### A general framework for modelling conditional probability distributions known as *mixture density networks*.
-### The use of Bayesian treatments of neural networks.
+The functional form of the network model. 
+The problem of determining the network parameters within a maximun likelihood framework using the technique of *error backpropagation*.
+How the backpropagation framework can be extensions to allow other derivatives to be evaluated, such as the Jacobian and Hessian matrices.
+Various approaches to regularization of neural network training.
+A general framework for modelling conditional probability distributions known as *mixture density networks*.
+The use of Bayesian treatments of neural networks.
 
 - **the feed-forward neural network**: Also known as the *multilayer perceptron*, which aims to fix the number of basis functions in advance but allow them to be adaptive, in other words to use parametric forms for the basis functions in which the parameter values are adapted during training.
 - **the approximation properties of feed-forward networks**: Neural networks are universal approximators. A two-layer network with linear outputs can uniformly approximate any continuous function on a compact input domain to arbitrary accuracy provided the network has a sufficiently large number of hidden units.
@@ -81,3 +81,12 @@
 - **Constructing Kernels**: One approach is to choose a  feature space mapping *ϕ*(x) and then use this to find the corresponding kernel. Another is to construct kernel functions directly. One powerful technique for constructing new kernels is to build them out of simpler kernels as building blocks. e.g. Polynomial kernel, Gaussian kernel, define a kernel by a generative model, Fisher kernel, sigmoidal kernel.
 - **Gaussian process**: Here we extend the role of kernels to probabilistic discriminative models, leading to the framework of Gaussian processes. We shall thereby see how kernels arise naturally  in a Bayesian setting.
 - **Gaussian process**: In general, a Gaussian process is defined as a probability distribution over functions y(x) such that the set of values of y(x) evaluated at an arbitrary set of points x1, ..., xN jointly have a Gaussian distribution.
+
+# Chapter 8　Graphical Models
+
+- **Bayesian networks**, also known as *directed graphical models*. **Markov random fields**, also known as *undirected graphical models*.
+- **Directed graphs** are useful for expressing causal relationships between random variables, whereas **undirected graphs** are better suited to expressing soft constraints between random variables.
+- **Parameterized models** control the exponential growth in the number of parameters in models of discrete variables for the conditional distributions instead of complete tables of conditional probability values.
+- **Linear-Gaussian model** is a Bayes net where all the variables are Gaussian, and each variable's mean is linear in the values of its parents. They are widely used because they support efficient inference. Linear dynamical systems are an important special case.
+- 
+
